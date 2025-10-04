@@ -1,10 +1,10 @@
 html {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
 
 body, #root {
@@ -19,7 +19,6 @@ body, #root {
 }
 
 a {
-  /* color: #4dff00; */
   color: #FF00E0;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
@@ -30,13 +29,13 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-    .text {
-        font-size: small;
-    }
+  .text {
+      font-size: small;
+  }
 
-    a {
-      font-size: x-small;
-    }
+  a {
+    font-size: x-small;
+  }
 }
 
 @tailwind base;
