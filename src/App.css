@@ -1,0 +1,15 @@
+.app-foreground {
+  position: relative;
+  z-index: 1;
+  background-image: radial-gradient(#4AF626 1.5px, transparent 0);
+  background-size: 80px 80px;
+  display: flex;
+  justify-items: center;
+  margin: 2em 2em 2em 2em;
+}
+
+.app-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
