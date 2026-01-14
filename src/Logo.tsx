@@ -1,17 +1,12 @@
 import './Logo.css'
-import GlitchText from './components/GlitchText';
 
 function Logo() {
   return (
     <div className='chau-banner'>
-      <GlitchText
-        speed={7}
-        enableShadows={false}
-        enableOnHover={true}
-        className='sixtyfour-chau'
-      >
-      CHAU
-      </GlitchText>
+      <audio controls>
+        <source src="/mynameischau.m4a" type="audio/mp4" />
+        Your browser does not support the audio element.
+      </audio>
     </div>
   );
 }

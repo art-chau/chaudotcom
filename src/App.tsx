@@ -1,12 +1,10 @@
 import './App.css'
-import Background from './Background.tsx'
 import ContactMe from './ContactMe.tsx'
 import Logo from './Logo.tsx'
 
 function App() {
   return (
     <>
-    <Background></Background>
     <div className='app-foreground'>
       <div className='app-bio'>
         <Logo></Logo>
