@@ -4,12 +4,44 @@
   background-image: radial-gradient(#4AF626 1.5px, transparent 0);
   background-size: 80px 80px;
   display: flex;
+  flex-direction: column;
   justify-items: center;
-  margin: 2em 2em 2em 2em;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .app-bio {
   display: flex;
   flex-direction: column;
   align-items: start;
+  flex-grow: 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .app-foreground {
+    padding: 80px;
+  }
+
+  .app-bio {
+    flex-grow: 1;
+  }
+
+  .app-bio > p.text {
+    max-width: 390px;
+  }
+
+  .app-bio > p.text:nth-child(even) {
+    align-self: flex-start;
+  }
+
+  .app-bio > p.text:nth-child(odd) {
+    align-self: flex-end;
+  }
 }
